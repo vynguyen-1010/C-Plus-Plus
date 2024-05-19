@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\User\\Documents\\GitHub\\C-Plus-Plus\\1000_Exercises\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2568E576-AD7B-4B1A-91A8-303AF0485FA4}|1000_Exercises\\1000_Exercises.vcxproj|C:\\Users\\User\\Documents\\GitHub\\C-Plus-Plus\\1000_Exercises\\1000_Exercises\\1000_Exercises.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{2568E576-AD7B-4B1A-91A8-303AF0485FA4}|1000_Exercises\\1000_Exercises.vcxproj|solutionrelative:1000_Exercises\\1000_Exercises.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "1000_Exercises.cpp",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\C-Plus-Plus\\1000_Exercises\\1000_Exercises\\1000_Exercises.cpp",
+              "RelativeDocumentMoniker": "1000_Exercises\\1000_Exercises.cpp",
+              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\C-Plus-Plus\\1000_Exercises\\1000_Exercises\\1000_Exercises.cpp",
+              "RelativeToolTip": "1000_Exercises\\1000_Exercises.cpp",
+              "ViewState": "AQIAABUBAAAAAAAAAAAAACcBAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-05-17T16:33:04.31Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
