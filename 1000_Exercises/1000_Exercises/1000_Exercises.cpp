@@ -21,6 +21,7 @@ int printMenu() {
 		cout << "8. Calculate summary of S(n) = 1^3 + 2^3 + ... + n^3" << endl;
 		cout << "9. Find the smallest positive integer n such that 1 + 2 + ... + n > 10000" << endl;
 		cout << "10. Use the for loop to print all characters from A to Z" << endl;
+		cout << "11. Calculate the summary of the odd positive integer less than n" << endl;
 		cout << "0. Close the program" << endl;
 
 		cout << "Enter your choice: ";
@@ -30,7 +31,7 @@ int printMenu() {
 			cin.ignore();
 			choice = -1;
 		}
-	} while (choice > 10 || choice < 0);
+	} while (choice > 11 || choice < 0);
 	return choice;
 }
 
@@ -272,6 +273,21 @@ int main()
 				cout << i << "\t";
 			}
 			cout << endl;
+			break;
+		}
+		case 11: {
+			system("cls");
+			cout << "----------11. Calculate the summary of the odd positive integer less than n----------" << endl;
+			cout << "Enter n: ";
+			float n;
+			cin >> n;
+			n = enterValidNumber(n);
+			int sum = 0;
+			for (int i = 1; i < n; i++) {
+				if (i % 2 != 0)
+					sum += i;
+			}
+			cout << "The summary of the odd positive integer less than " << n << ": " << sum << endl;
 			break;
 		}
 		default:
