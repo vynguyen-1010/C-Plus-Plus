@@ -1,10 +1,12 @@
 #include <iostream>
 #include <cstdlib>
-#include <time.h>
+#include <ctime>
 
 using namespace std;
 
 #define MAX 100
+#define ROW 10
+#define COL 20
 
 void enterArray(int a[], int &n) {
 	srand(time(NULL));
@@ -107,6 +109,43 @@ void deleteElement(int a[], int& n, int idx) {
 	n -= 1;
 }
 
+void print2DArray(int a[][COL], int row, int col) {
+	for (int i = 0; i < row; i++)
+	{
+		for (int j = 0; j < col; j++)
+		{
+			cout << a[i][j] << "\t";
+		}
+		cout << endl;
+	}
+}
+
+void enter2DArray(int a[][COL], int &row, int &col) {
+	srand(time(NULL));
+	cout << "Enter the row: ";
+	cin >> row;
+	while (row <= 0 || cin.fail()) {
+		cout << "Please enter the positive integer number less than 2.147.478: ";
+		cin.clear();
+		cin.ignore();
+		cin >> row;
+	}
+	cout << "Enter the column: ";
+	cin >> col;
+	while (col <= 0 || cin.fail()) {
+		cout << "Please enter the positive integer number less than 2.147.478: ";
+		cin.clear();
+		cin.ignore();
+		cin >> col;
+	}
+	for (int i = 0; i < row; i++)
+	{
+		for (int j = 0; j < col; j++) {
+			a[i][j] = rand() % 100 + 1;
+		}
+	}
+}
+
 int main() {
 
 #if 0
@@ -139,7 +178,7 @@ int main() {
 
 #endif Array
 
-#if 1
+#if 0
 	int arr[MAX];
 	int n;
 	enterArray(arr, n);
@@ -168,15 +207,16 @@ int main() {
 	printArray(arr, n);*/
 
 
-
-	
-	
-	
-
-
-
 #endif // Enter and print array by functions
 
+#if 1
+	
+	int a[ROW][COL];
+	int row, col;
+	enter2DArray(a, row, col);
+	print2DArray(a, row, col);
+	
+#endif // two-demensional arrays 
 
 
 	return 0;

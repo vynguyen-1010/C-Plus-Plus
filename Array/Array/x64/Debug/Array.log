@@ -1,3 +1,4 @@
 ﻿  main.cpp
-C:\Users\Admin\Documents\C-Plus-Plus\Array\Array\main.cpp(10,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
-  Array.vcxproj -> C:\Users\Admin\Documents\C-Plus-Plus\Array\x64\Debug\Array.exe
+C:\Users\User\Documents\GitHub\C-Plus-Plus\Array\Array\main.cpp(12,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+C:\Users\User\Documents\GitHub\C-Plus-Plus\Array\Array\main.cpp(124,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  Array.vcxproj -> C:\Users\User\Documents\GitHub\C-Plus-Plus\Array\x64\Debug\Array.exe
