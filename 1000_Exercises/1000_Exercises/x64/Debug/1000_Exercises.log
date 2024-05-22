@@ -1,20 +1,20 @@
 ﻿  1000_Exercises.cpp
-C:\Users\Admin\Documents\C-Plus-Plus\1000_Exercises\1000_Exercises\1000_Exercises.cpp(119,24): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-C:\Users\Admin\Documents\C-Plus-Plus\1000_Exercises\1000_Exercises\1000_Exercises.cpp(120,34): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-C:\Users\Admin\Documents\C-Plus-Plus\1000_Exercises\1000_Exercises\1000_Exercises.cpp(129,24): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-C:\Users\Admin\Documents\C-Plus-Plus\1000_Exercises\1000_Exercises\1000_Exercises.cpp(148,24): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-C:\Users\Admin\Documents\C-Plus-Plus\1000_Exercises\1000_Exercises\1000_Exercises.cpp(153,16): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-C:\Users\Admin\Documents\C-Plus-Plus\1000_Exercises\1000_Exercises\1000_Exercises.cpp(166,24): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-C:\Users\Admin\Documents\C-Plus-Plus\1000_Exercises\1000_Exercises\1000_Exercises.cpp(171,24): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-C:\Users\Admin\Documents\C-Plus-Plus\1000_Exercises\1000_Exercises\1000_Exercises.cpp(176,23): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
-C:\Users\Admin\Documents\C-Plus-Plus\1000_Exercises\1000_Exercises\1000_Exercises.cpp(188,24): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-C:\Users\Admin\Documents\C-Plus-Plus\1000_Exercises\1000_Exercises\1000_Exercises.cpp(192,24): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-C:\Users\Admin\Documents\C-Plus-Plus\1000_Exercises\1000_Exercises\1000_Exercises.cpp(196,24): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-C:\Users\Admin\Documents\C-Plus-Plus\1000_Exercises\1000_Exercises\1000_Exercises.cpp(198,54): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-C:\Users\Admin\Documents\C-Plus-Plus\1000_Exercises\1000_Exercises\1000_Exercises.cpp(198,51): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-C:\Users\Admin\Documents\C-Plus-Plus\1000_Exercises\1000_Exercises\1000_Exercises.cpp(198,48): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-C:\Users\Admin\Documents\C-Plus-Plus\1000_Exercises\1000_Exercises\1000_Exercises.cpp(237,90): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-C:\Users\Admin\Documents\C-Plus-Plus\1000_Exercises\1000_Exercises\1000_Exercises.cpp(246,24): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-C:\Users\Admin\Documents\C-Plus-Plus\1000_Exercises\1000_Exercises\1000_Exercises.cpp(250,16): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
-C:\Users\Admin\Documents\C-Plus-Plus\1000_Exercises\1000_Exercises\1000_Exercises.cpp(284,24): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-  1000_Exercises.vcxproj -> C:\Users\Admin\Documents\C-Plus-Plus\1000_Exercises\x64\Debug\1000_Exercises.exe
+C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\1000_Exercises\1000_Exercises.cpp(119,24): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\1000_Exercises\1000_Exercises.cpp(120,34): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\1000_Exercises\1000_Exercises.cpp(129,24): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\1000_Exercises\1000_Exercises.cpp(148,24): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\1000_Exercises\1000_Exercises.cpp(153,16): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\1000_Exercises\1000_Exercises.cpp(166,24): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\1000_Exercises\1000_Exercises.cpp(171,24): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\1000_Exercises\1000_Exercises.cpp(176,23): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\1000_Exercises\1000_Exercises.cpp(188,24): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\1000_Exercises\1000_Exercises.cpp(192,24): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\1000_Exercises\1000_Exercises.cpp(196,24): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\1000_Exercises\1000_Exercises.cpp(198,54): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\1000_Exercises\1000_Exercises.cpp(198,51): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\1000_Exercises\1000_Exercises.cpp(198,48): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\1000_Exercises\1000_Exercises.cpp(237,90): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\1000_Exercises\1000_Exercises.cpp(246,24): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\1000_Exercises\1000_Exercises.cpp(250,16): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
+C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\1000_Exercises\1000_Exercises.cpp(284,24): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+  1000_Exercises.vcxproj -> C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\x64\Debug\1000_Exercises.exe
