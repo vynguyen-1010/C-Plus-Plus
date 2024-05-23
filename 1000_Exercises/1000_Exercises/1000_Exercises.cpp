@@ -33,7 +33,20 @@ int printMenu() {
 		cout << "17. Enter 3 real numbers, replace all negative numbers with their absolute value" << endl;
 		cout << "18. Enter x, calculate the value of f(x) = 2x^2 + 5x + 9 while x >= 5, and f(x) = -2x^2 + 4x – 9 while x < 5" << endl;
 		cout << "19. Enter 3 sides of a triangle, indicate what triangle it is" << endl;
-		cout << "20. Solution: ɑx + by = c, dx + ey = f. Coefficients entered from the keyboard" << endl;
+		cout << "20. Not Done - Solution: ɑx + by = c, dx + ey = f. Coefficients entered from the keyboard" << endl;
+		cout << "21. Enter a month and year. Print the days in that month" << endl;
+		cout << "22. Enter a day, month, and year. Print the next day" << endl;
+		cout << "23. Enter a day, month, and year. Print the day before" << endl;
+		cout << "24. Enter a day, month, and year. Calculate what day of the year it is" << endl;
+		cout << "25. Enter an integer number with 2 digits. Print the reading of this integer" << endl;
+		cout << "26. Enter an integer number with 3 digits. Print the reading of this integer" << endl;
+		cout << "27. Calculate S =  Nth root of x" << endl;
+		cout << "28. Calculate S = x^y" << endl;
+		cout << "29. Print the multiplication table" << endl;
+		cout << "30. A total of 200.000 VND is needed from 3 types of banknotes: 1000VND, 2000VND, 5000VND. Find all possible options" << endl;
+		cout << "31. Print an isosceles triangle of height h" << endl;
+		cout << "32. Print a rectangle with dimensions m x n" << endl;
+		cout << "33. Calculate sin(x) with accuracy 0.00001 according to the formula: Sin(x) = x – x^3/3! + x^5/5! + … + (-1)^n . x^2n + 1/(2n + 1)!" << endl;
 		cout << "0. Close the program" << endl;
 
 		cout << "Enter your choice: ";
@@ -43,7 +56,7 @@ int printMenu() {
 			cin.ignore();
 			choice = -1;
 		}
-	} while (choice > 20 || choice < 0);
+	} while (choice > 33 || choice < 0);
 	return choice;
 }
 
@@ -150,6 +163,48 @@ bool isTriangle(int a, int b, int c) {
 	if (absN(a - b) < c && c < (a + b))
 		return true;
 	return false;
+}
+
+//Check the leap year 
+bool isLeapYear(int year) {
+	if (year % 4 == 0)
+		return true;
+	return false;
+}
+
+int daysInMonth(int month, int year) {
+	int days = 0;
+	switch (month)
+	{
+	case 1:
+	case 3:
+	case 5:
+	case 7:
+	case 8:
+	case 10:
+	case 12: {
+		days = 31;
+		break;
+	}
+	case 2: {
+		if (year % 4 == 0) {
+			days = 29;
+		}
+		else
+		{
+			days = 28;
+		}
+		break;
+	}
+	case 4:
+	case 6:
+	case 9:
+	case 11: {
+		days = 30;
+		break;
+	}
+	}
+	return days;
 }
 
 int main()
@@ -497,6 +552,171 @@ int main()
 			cout << "The results of the equations \n" << a << "x + " << b << "y = " << c << "\n" << d << "x + " << e << "y = " << f << ": " << endl;
 			cout << "x = " << setprecision(4) << x << endl;
 			cout << "y = " << setprecision(4) << y << endl;
+			break;
+		}
+		case 21: {
+			system("cls");
+			cout << "----------21. Enter a month and year. Print the days in that month----------" << endl;
+			int month, year;
+			cout << "Enter a month: ";
+			cin >> month;
+			month = enterValidNumber(month);
+			while (month > 12)
+			{
+				cout << "Please enter the valid month, from 1 to 12: ";
+				cin >> month;
+			}
+			cout << "Enter a year: ";
+			cin >> year;
+			year = enterValidNumber(year);
+			cout << "The days in " << month << "/" << year << " is: " << daysInMonth(month, year) << " days" << endl;
+			break;
+		}
+		case 22: {
+			system("cls");
+			cout << "----------22. Enter a day, month, and year. Print the next day----------" << endl;
+			int day, month, year;
+			cout << "Enter a day: ";
+			cin >> day;
+			day = enterValidNumber(day);
+			while (day > 31)
+			{
+				cout << "Please enter the valid month, from 1 to 31: ";
+				cin >> day;
+			}
+			cout << "Enter a month: ";
+			cin >> month;
+			month = enterValidNumber(month);
+			while (month > 12 || (day==31 && (month==2 || month==4 || month==6 || month == 9 || month==11)))
+			{
+				cout << "Please enter the valid month: ";
+				cin >> month;
+			}
+			cout << "Enter a year: ";
+			cin >> year;
+			year = enterValidNumber(year);
+			while (month == 2 && day == 29 && year % 4 != 0) {
+				cout << "Your date is not valid, please enter the other year: ";
+				cin >> year;
+			}
+			int days = 0;
+			if (day == 31 && month == 12) {
+				day = 1;
+				month = 1;
+				year++;
+			}
+			else {
+				day++;
+				switch (month)
+				{
+				case 1:
+				case 3:
+				case 5:
+				case 7:
+				case 8:
+				case 10:
+				case 12: {
+					if (day == 32) {
+						day = 1;
+						month++;
+					}
+					break;
+				}
+				case 2: {
+					if (year % 4 == 0) {
+						if (day == 30) {
+							day = 1;
+							month++;
+						}
+					}
+					else
+					{
+						if (day == 29) {
+							day = 1;
+							month++;
+						}
+					}
+					break;
+				}
+				case 4:
+				case 6:
+				case 9:
+				case 11: {
+					if (day == 30) {
+						day = 1;
+						month++;
+					}
+					break;
+				}
+				}
+			}
+			cout << "The next day is: " << day << "/" << month << "/" << year << endl;
+			break;
+		}
+		case 23: {
+			system("cls");
+			cout << "----------20. ----------" << endl;
+
+			break;
+		}
+		case 24: {
+			system("cls");
+			cout << "----------20. ----------" << endl;
+
+			break;
+		}
+		case 25: {
+			system("cls");
+			cout << "----------20. ----------" << endl;
+
+			break;
+		}
+		case 26: {
+			system("cls");
+			cout << "----------20. ----------" << endl;
+
+			break;
+		}
+		case 27: {
+			system("cls");
+			cout << "----------20. ----------" << endl;
+
+			break;
+		}
+		case 28: {
+			system("cls");
+			cout << "----------20. ----------" << endl;
+
+			break;
+		}
+		case 29: {
+			system("cls");
+			cout << "----------20. ----------" << endl;
+
+			break;
+		}
+		case 30: {
+			system("cls");
+			cout << "----------20. ----------" << endl;
+
+			break;
+		}
+		case 31: {
+			system("cls");
+			cout << "----------20. ----------" << endl;
+
+			break;
+		}
+		case 32: {
+			system("cls");
+			cout << "----------20. ----------" << endl;
+
+			break;
+		}
+		case 33: {
+			system("cls");
+			cout << "----------20. ----------" << endl;
+
 			break;
 		}
 		default:
