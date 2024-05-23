@@ -40,7 +40,7 @@ int printMenu() {
 
 //Check the positive integer
 bool isValidNumber(float n) {
-	if (n <= 0 || (fmod(n, 1) != 0) || cin.fail() || n > 2147483647 || n < -2147483648) {
+	if (n <= 0 || (fmod(n, 1) != 0) || cin.fail() || n > 100) {
 		cin.clear();
 		cin.ignore();
 		return false;

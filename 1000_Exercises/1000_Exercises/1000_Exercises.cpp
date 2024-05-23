@@ -1,6 +1,9 @@
-#include <iostream>
+﻿#include <iostream>
 #include <string>
 #include <math.h>
+#include <cstdlib>
+#include <time.h>
+#include <iomanip>
 
 using namespace std;
 
@@ -22,6 +25,15 @@ int printMenu() {
 		cout << "9. Find the smallest positive integer n such that 1 + 2 + ... + n > 10000" << endl;
 		cout << "10. Use the for loop to print all characters from A to Z" << endl;
 		cout << "11. Calculate the summary of the odd positive integer less than n" << endl;
+		cout << "12. Find the larger number such that 1 + 2 + ... + m < n" << endl;
+		cout << "13. Print all the odd positive numbers less than 100" << endl;
+		cout << "14. Find the lager divisors of two poitive integer numbers" << endl;
+		cout << "15. Check if a number is a prime number or not" << endl;
+		cout << "16. Print all the odd numbers less than 100 except 5, 7, and 93" << endl;
+		cout << "17. Enter 3 real numbers, replace all negative numbers with their absolute value" << endl;
+		cout << "18. Enter x, calculate the value of f(x) = 2x^2 + 5x + 9 while x >= 5, and f(x) = -2x^2 + 4x – 9 while x < 5" << endl;
+		cout << "19. Enter 3 sides of a triangle, indicate what triangle it is" << endl;
+		cout << "20. Solution: ɑx + by = c, dx + ey = f. Coefficients entered from the keyboard" << endl;
 		cout << "0. Close the program" << endl;
 
 		cout << "Enter your choice: ";
@@ -31,7 +43,7 @@ int printMenu() {
 			cin.ignore();
 			choice = -1;
 		}
-	} while (choice > 11 || choice < 0);
+	} while (choice > 20 || choice < 0);
 	return choice;
 }
 
@@ -46,6 +58,16 @@ bool isValidNumber(float n) {
 }
 int enterValidNumber(float n) {
 	while (isValidNumber(n) == false) {
+		cout << "Please enter the positive integer number less than 2.147.483.647: ";
+		cin >> n;
+	}
+	return (int)n;
+}
+
+int enterValidIntNumber(float n) {
+	while ((fmod(n, 1) != 0) || cin.fail() || n > 2147483647 || n < -2147483648) {
+		cin.clear();
+		cin.ignore();
 		cout << "Please enter the positive integer number less than 2.147.483.647: ";
 		cin >> n;
 	}
@@ -100,6 +122,34 @@ int checkQuaterOfMonth(int month) {
 		break;
 	}
 	return quater;
+}
+
+//Check if a number is a prime number
+bool isPrime(int n) {
+	int count = 0;
+	for (int i = 1; i <= n; i++)
+	{
+		if (n % i == 0)
+			count++;
+	}
+	if (count == 2)
+		return true;
+	else
+		return false;
+}
+
+//Calculate the absolute of a number
+float absN(float n) {
+	if (n < 0)
+		n = n * -1;
+	return n;
+}
+
+//Check if 3 numbers can be a triangle
+bool isTriangle(int a, int b, int c) {
+	if (absN(a - b) < c && c < (a + b))
+		return true;
+	return false;
 }
 
 int main()
@@ -260,7 +310,6 @@ int main()
 			{
 				i++;
 				sum += i;
-				
 			}
 			cout << "The smallest positive integer such that 1 + 2 + ... + n > 10000 is: " << i << endl;
 			break;
@@ -288,6 +337,166 @@ int main()
 					sum += i;
 			}
 			cout << "The summary of the odd positive integer less than " << n << ": " << sum << endl;
+			break;
+		}
+		case 12: {
+			system("cls");
+			cout << "----------12. Find the larger number such that 1 + 2 + ... + m < n----------" << endl;
+			float n;
+			cout << "Enter n: ";
+			cin >> n;
+			n = enterValidNumber(n);
+			cout << "The larger number such that 1 + 2 +...+ m < " << n << " is: ";
+			int sum = 0, i = 0;
+			while (sum < n)
+			{
+				i++;
+				sum += i;
+			}
+			cout << --i << endl;
+			break;
+		}
+		case 13: {
+			system("cls");
+			cout << "----------13. Print all the odd positive numbers less than 100----------" << endl;
+			cout << "The odd positive numbers less than 100: " << endl;
+			for (int i = 0; i < 100; i++)
+			{
+				if (i % 2 != 0)
+					cout << i << "\t";
+			}
+			cout << endl;
+			break;
+		}
+		case 14: {
+			system("cls");
+			cout << "----------14. Find the lager divisors of two poitive integer numbers----------" << endl;
+			float a, b;
+			cout << "Enter a: ";
+			cin >> a;
+			a = enterValidNumber(a);
+			cout << "\nEnter b: ";
+			cin >> b;
+			a = enterValidNumber(b);
+			cout << "The larger divisors of [" << a << ", " << b << "] is: ";
+			break;
+		}
+		case 15: {
+			system("cls");
+			cout << "----------15. Check if a number is a prime number or not----------" << endl;
+			float n;
+			cout << "Enter n: ";
+			cin >> n;
+			n = enterValidNumber(n);
+			if (isPrime(n))
+				cout << n << " is a prime number" << endl;
+			else
+				cout << n << " is not a prime number" << endl;
+			break;
+		}
+		case 16: {
+			system("cls");
+			cout << "----------16. Print all the odd numbers less than 100 except 5, 7, and 93----------" << endl;
+			for (int i = 0; i < 100; i++)
+			{
+				if (i % 2 != 0 && i != 5 && i != 7 && i != 93)
+					cout << i << "\t";
+			}
+			cout << endl;
+			break;
+		}
+		case 17: {
+			system("cls");
+			cout << "----------17. Enter 3 real numbers, replace all negative numbers with their absolute value----------" << endl;
+			float a, b, c;
+			srand(time(NULL));
+			a = static_cast<float>(rand() % 10 - 100) / 1.1;
+			b = static_cast<float>(rand() % 50 - 50) / 1.1;
+			c = static_cast<float>(rand() % 100 - 10) / 1.1;
+			cout << "The real numbers are: " << setprecision(4) << a << ", " << b << ", " << c << endl;
+			a = absN(a);
+			b = absN(b);
+			c = absN(c);
+			cout << "The absolute values are: " << a << ", " << b << ", " << c << endl;
+			break;
+		}
+		case 18: {
+			system("cls");
+			cout << "----------18. Enter x, calculate the value of f(x) = 2x^2 + 5x + 9 while x >= 5, and f(x) = -2x^2 + 4x - 9 while x < 5----------" << endl;
+			float x;
+			cout << "Enter x: ";
+			cin >> x;
+			x = enterValidIntNumber(x);
+			if (x >= 5) {
+				cout << "f(" << x << ") = 2x^2 + 5x + 9 = " << 2 * (pow(x, 2)) + 5 * x + 9 << endl;
+			}
+			else {
+				cout << "f(" << x << ") = -2x^2 + 4x – 9 = " << -2 * (pow(x, 2)) + 4 * x - 9 << endl;
+			}
+			break;
+		}
+		case 19: {
+			system("cls");
+			cout << "----------19. Enter 3 sides of a triangle, indicate what triangle it is----------" << endl;
+			float a, b, c;
+			cout << "Enter the 1st side of the triangle: ";
+			cin >> a;
+			a = enterValidNumber(a);
+
+			cout << "Enter the 2nd side of the triangle: ";
+			cin >> b;
+			b = enterValidNumber(b);
+
+			cout << "Enter the 3rd side of the triangle: ";
+			cin >> c;
+			c = enterValidNumber(c);
+
+			if (isTriangle(a, b, c) == false)
+				cout << a << ", " << b << ", " << c << " cannot be a triangle" << endl;
+			else if (a == b && b == c)
+				cout << "This is an equilateral triangle" << endl;
+			else if (((a * a == b * b + c * c) || (b * b == a * a + c * c) || (c * c == a * a + b * b)) && ((a == b) || (a == c) || (b == c)))
+				cout << "This is a triangle right angle" << endl;
+			else if ((a * a == b * b + c * c) || (b * b == a * a + c * c) || (c * c == a * a + b * b))
+				cout << "This is a right angle" << endl;
+			else if ((a == b) || (a == c) || (b == c))
+				cout << "This is an isosceles triangle" << endl;
+			else
+				cout << "This is a regular triangle" << endl;
+			break;
+		}
+		case 20: {
+			system("cls");
+			cout << "----------20. Solution: ɑx + by = c, dx + ey = f. Coefficients entered from the keyboar----------" << endl;
+			float a, b, c, d, e, f;
+			cout << "Enter a: ";
+			cin >> a;
+			a = enterValidIntNumber(a);
+
+			cout << "Enter b: ";
+			cin >> b;
+			b = enterValidIntNumber(b);
+
+			cout << "Enter c: ";
+			cin >> c;
+			c = enterValidIntNumber(c);
+
+			cout << "Enter d: ";
+			cin >> d;
+			d = enterValidIntNumber(d);
+
+			cout << "Enter e: ";
+			cin >> e;
+			e = enterValidIntNumber(e);
+
+			cout << "Enter f: ";
+			cin >> f;
+			f = enterValidIntNumber(f);
+			float y = (d * c / a - f) / (d * b / a - e);
+			float x = (c - b * y) / a;
+			cout << "The results of the equations \n" << a << "x + " << b << "y = " << c << "\n" << d << "x + " << e << "y = " << f << ": " << endl;
+			cout << "x = " << setprecision(4) << x << endl;
+			cout << "y = " << setprecision(4) << y << endl;
 			break;
 		}
 		default:
