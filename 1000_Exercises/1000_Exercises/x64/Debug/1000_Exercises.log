@@ -47,4 +47,10 @@ C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\1000_Exercises\1000_Ex
 C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\1000_Exercises\1000_Exercises.cpp(581,27): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
 C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\1000_Exercises\1000_Exercises.cpp(589,29): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
 C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\1000_Exercises\1000_Exercises.cpp(597,28): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\1000_Exercises\1000_Exercises.cpp(661,27): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\1000_Exercises\1000_Exercises.cpp(669,29): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\1000_Exercises\1000_Exercises.cpp(677,28): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\1000_Exercises\1000_Exercises.cpp(737,27): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\1000_Exercises\1000_Exercises.cpp(745,29): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\1000_Exercises\1000_Exercises.cpp(753,28): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
   1000_Exercises.vcxproj -> C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\x64\Debug\1000_Exercises.exe

@@ -41,7 +41,7 @@ int printMenu() {
 		cout << "25. Enter an integer number with 2 digits. Print the reading of this integer" << endl;
 		cout << "26. Enter an integer number with 3 digits. Print the reading of this integer" << endl;
 		cout << "27. Calculate S =  Nth root of x" << endl;
-		cout << "28. Calculate S = x^y" << endl;
+		cout << "28. Calculate S = x^y" << endl; 
 		cout << "29. Print the multiplication table" << endl;
 		cout << "30. A total of 200.000 VND is needed from 3 types of banknotes: 1000VND, 2000VND, 5000VND. Find all possible options" << endl;
 		cout << "31. Print an isosceles triangle of height h" << endl;
@@ -599,7 +599,6 @@ int main()
 				cout << "Your date is not valid, please enter the other year: ";
 				cin >> year;
 			}
-			int days = 0;
 			if (day == 31 && month == 12) {
 				day = 1;
 				month = 1;
@@ -655,14 +654,138 @@ int main()
 		}
 		case 23: {
 			system("cls");
-			cout << "----------20. ----------" << endl;
-
+			cout << "----------23. Enter a day, month, and year. Print the day before----------" << endl;
+			int day, month, year;
+			cout << "Enter a day: ";
+			cin >> day;
+			day = enterValidNumber(day);
+			while (day > 31)
+			{
+				cout << "Please enter the valid day, from 1 to 31: ";
+				cin >> day;
+			}
+			cout << "Enter a month: ";
+			cin >> month;
+			month = enterValidNumber(month);
+			while (month > 12 || (day == 31 && (month == 2 || month == 4 || month == 6 || month == 9 || month == 11)))
+			{
+				cout << "Please enter the valid month: ";
+				cin >> month;
+			}
+			cout << "Enter a year: ";
+			cin >> year;
+			year = enterValidNumber(year);
+			while (month == 2 && day == 29 && year % 4 != 0) {
+				cout << "Your date is not valid, please enter the other year: ";
+				cin >> year;
+			}
+			if (day == 1 && month == 1) {
+				day = 31;
+				month = 12;
+				year--;
+			}
+			else {
+				day--;
+				switch (month)
+				{
+				case 1:
+				case 5:
+				case 7:
+				case 8:
+				case 10:
+				case 12: {
+					if (day == 0) {
+						day = 30;
+						month--;
+					}
+					break;
+				}
+				case 3: {
+					if ((year % 4 == 0) && (day == 0))
+					{
+						day = 29;
+						month--;
+					}
+					else {
+						day = 28;
+						month--;
+					}
+					break;
+				}	
+				case 2:	
+				case 4:
+				case 6:
+				case 9:
+				case 11: {
+					if (day == 0) {
+						day = 31;
+						month--;
+					}
+					break;
+				}
+				}
+			}
+			cout << "The before day is: " << day << "/" << month << "/" << year << endl;
 			break;
 		}
 		case 24: {
 			system("cls");
-			cout << "----------20. ----------" << endl;
-
+			cout << "----------24. Enter a day, month, and year. Calculate what day of the year it is----------" << endl;
+			int day, month, year;
+			cout << "Enter day: ";
+			cin >> day;
+			day = enterValidNumber(day);
+			while ( day > 31)
+			{
+				cout << "Please enter the valid day, from 1 to 31: ";
+				cin >> day;
+			}
+			cout << "Enter month: ";
+			cin >> month;
+			month = enterValidNumber(month);
+			while (month > 12 || ((day == 31) && (month == 2 || month == 4 || month == 6 || month == 9 || month == 11)))
+			{
+				cout << "Please enter the valid month: ";
+				cin >> month;
+			}
+			cout << "Enter year: ";
+			cin >> year;
+			year = enterValidNumber(year);
+			while (year % 4 != 0 && day == 29 && month == 2)
+			{
+				cout << "Your date is not valid, please enter the other year: ";
+				cin >> year;
+			}
+			int s = day;
+			for (int i = 1; i < month; i++)
+			{
+				switch (i)
+				{
+				case 1:
+				case 3:
+				case 5:
+				case 7:
+				case 8:
+				case 10:
+				case 12:
+					s += 31;
+					break;
+				case 2: {
+					if (year % 4 == 0)
+						s += 29;
+					else
+						s += 28;
+					break;
+				}
+				case 4:
+				case 6:
+				case 9:
+				case 11:
+					s += 30;
+					break;
+				}
+			}
+			cout << "The date you've entered is the " << s << " day in the year" << endl;
 			break;
 		}
 		case 25: {
