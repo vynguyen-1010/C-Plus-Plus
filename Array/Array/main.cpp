@@ -5,8 +5,8 @@
 using namespace std;
 
 #define MAX 100
-#define ROW 10
-#define COL 20
+#define ROW 100
+#define COL 100
 
 void enterArray(int a[], int &n) {
 	srand(time(NULL));
@@ -141,9 +141,27 @@ void enter2DArray(int a[][COL], int &row, int &col) {
 	for (int i = 0; i < row; i++)
 	{
 		for (int j = 0; j < col; j++) {
-			a[i][j] = rand() % 100 + 1;
+			a[i][j] = rand() % 100 - 20;
 		}
 	}
+}
+
+int sumRow2DArray(int a[][COL], int iRow, int col) {
+	int sum = 0;
+	for (int i = 0; i < col; i++)
+	{
+		sum += a[iRow][i];
+	}
+	return sum;
+}
+
+int sumCol2DArray(int a[][COL], int row, int iCol) {
+	int sum = 0;
+	for (int i = 0; i < row; i++)
+	{
+		sum += a[i][iCol];
+	}
+	return sum;
 }
 
 int main() {
@@ -215,6 +233,29 @@ int main() {
 	int row, col;
 	enter2DArray(a, row, col);
 	print2DArray(a, row, col);
+	int iRow = 0;
+	cout << "Enter the row you want to calculate summary: ";
+	cin >> iRow;
+	while (iRow >= row || cin.fail())
+	{
+		cout << "Please enter the row less than " << row << ": ";
+		cin.clear();
+		cin.ignore();
+		cin >> iRow;
+	}
+	cout << "Summary of row " << iRow << ": " << sumRow2DArray(a, iRow, col) << endl;
+
+	int iCol = 0;
+	cout << "Enter the col you want to calculate summary: ";
+	cin >> iCol;
+	while (iCol >= col || cin.fail())
+	{
+		cout << "Please enter the row less than " << col << ": ";
+		cin.clear();
+		cin.ignore();
+		cin >> iCol;
+	}
+	cout << "Summary of col " << iCol << ": " << sumCol2DArray(a, row, iCol) << endl;
 	
 #endif // two-demensional arrays 
 

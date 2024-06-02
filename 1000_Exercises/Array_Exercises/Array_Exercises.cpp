@@ -25,6 +25,12 @@ int printMenu() {
 		cout << "8. Enter and print a 1-dimentional array of integer numbers" << endl;
 		cout << "9. List out all even values in a 1-dimensional array of integer numbers" << endl;
 		cout << "10. List out the position of values that are negative in a 1-dimentional array of real numbers" << endl;
+		cout << "11. Find the first positive value in a 1-dimensional array of real numbers" << endl;
+		cout << "12. Find the last even value in a 1-dimensional array of integer numbers" << endl;
+		cout << "13. Find the positions that have the minimum value in a 1-dimensional array of real numbers" << endl;
+		cout << "14. Find the first even value in a 1-dimensional array of integer numbers" << endl;
+		cout << "15. Find the last perfect number in a 1-dimenstional array of integer numbers" << endl;
+		cout << "16. Find the position of the last minimum positive value in a 1-dimensional array of real numbers" << endl;
 		cout << "0. Close the program" << endl;
 
 		cout << "Enter your choice: ";
@@ -34,7 +40,7 @@ int printMenu() {
 			cin.ignore();
 			choice = -1;
 		}
-	} while (choice > 11 || choice < 0);
+	} while (choice > 16 || choice < 0);
 	return choice;
 }
 
@@ -60,7 +66,7 @@ void enterArrayReal(float a[], int n) {
 	srand(time(NULL));
 	for (int i = 0; i < n; i++)
 	{
-		a[i] = (rand()%100-10) / 1.1;
+		a[i] = (rand()%100-50) / 1.1;
 	}
 }
 
@@ -69,7 +75,7 @@ void enterArrayInt(int a[], int n) {
 	srand(time(NULL));
 	for (int i = 0; i < n; i++)
 	{
-		a[i] = (rand() % 200) - 10;
+		a[i] = (rand() % 200) - 50;
 	}
 }
 
@@ -93,7 +99,7 @@ void printArrayInt(int a[], int n) {
 
 //Find the larger value in an array of real numbers
 float findMax(float a[], int n) {
-	float max = 0;
+	float max = a[0];
 	for (int i = 0; i < n; i++)
 	{
 		if (a[i] > max)
@@ -112,6 +118,18 @@ int findPositionMin(int a[], int n) {
 		}
 	}
 	return pMin;	
+}
+
+//Find the position that has the minimum value in an array of real numbers
+int findPositionMinReal(float a[], int n) {
+	int pMin = 0;
+	for (int i = 0; i < n; i++)
+	{
+		if (a[i] < a[pMin]) {
+			pMin = i;
+		}
+	}
+	return pMin;
 }
 
 //Check if a value are even and less than x
@@ -137,6 +155,14 @@ bool isPrimeNumber(int n) {
 		return true;
 	else
 		return false;
+}
+
+bool isPrimeNumberUseFlag(int n) {
+	bool flag = true;
+	for (int i = 2; i < sqrt(n); i++) {
+		flag = false;
+	}
+	return flag;
 }
 
 //Calculate the summary of the negative values in an array of integer numbers
@@ -168,6 +194,41 @@ void sortUpReal(float a[], int n) {
 	}
 }
 
+int findFirstPositivePosition(float a[], int n) {
+	int fPos = -1;
+	for (int i = 0; i < n; i++)
+	{
+		if (a[i] > 0) {
+			fPos = i;
+			return fPos;
+		}
+	}
+	return fPos;
+}
+
+int findLastEvenPosition(int a[], int n) {
+	int fLast = -1;
+	for (int i = 0; i < n; i++)
+	{
+		if (a[i] % 2 == 0) {
+			fLast = i;
+		}
+	}
+	return fLast;
+}
+
+int findFirstEvenPosition(int a[], int n) {
+	int fFirst = -1;
+	for (int i = 0; i < n; i++)
+	{
+		if (a[i] % 2 == 0) {
+			fFirst = i;
+			return fFirst;
+		}
+	}
+	return fFirst;
+}
+
 int main()
 {
 	int choice;
@@ -192,7 +253,7 @@ int main()
 		}
 		case 2: {
 			system("cls");
-			cout << "----------2. Find a location where it has the smallest value in a 1-dimensional array of integer numbers----------" << endl;
+			cout << "----------2. Find a position where it has the smallest value in a 1-dimensional array of integer numbers----------" << endl;
 			int a[MAX];
 			float n;
 			cout << "Enter the number of elements: ";
@@ -343,6 +404,75 @@ int main()
 			if (count == 0)
 				cout << "No negative values in this array";
 			cout << endl;
+			break;
+		}
+		case 11: {
+			system("cls");
+			cout << "----------11. Find the first positive value in a 1-dimensional array of real numbers----------" << endl;
+			float a[MAX];
+			float n;
+			cout << "Enter the number of elements: ";
+			cin >> n;
+			n = enterValidNumber(n);
+			enterArrayReal(a, n);
+			cout << "Array that just enter: " << endl;
+			printArrayReal(a, n);
+			int fPositivePosition = findFirstPositivePosition(a, n);
+			if (fPositivePosition != -1) {
+				cout << "The first positive value is: a[" << fPositivePosition << "] = " << a[fPositivePosition] << endl;
+			}
+			else {
+				cout << "Not found the positive value in the array" << endl;
+			}
+			break;
+		}
+		case 12: {
+			system("cls");
+			cout << "----------12. Find the last even value in a 1-dimensional array of integer numbers----------" << endl;
+			int a[MAX];
+			int n;
+			cout << "Enter the number of elements: ";
+			cin >> n;
+			n = enterValidNumber(n);
+			enterArrayInt(a, n);
+			cout << "Array that just enter: " << endl;
+			printArrayInt(a, n);
+			int lastEvenPosition = findLastEvenPosition(a, n);
+			cout << "The last even value is a[" << lastEvenPosition << "] = " << a[lastEvenPosition] << endl;
+			break;
+		}
+		case 13: {
+			system("cls");
+			cout << "----------13. Find a position that has the minimum value in a 1-dimensional array of real numbers----------" << endl;
+			float a[MAX];
+			int n;
+			cout << "Enter the number of elements: ";
+			cin >> n;
+			n = enterValidNumber(n);
+			enterArrayReal(a, n);
+			cout << "Array that just enter: " << endl;
+			printArrayReal(a, n);
+			cout << "The position that has the minimum value is a[" << findPositionMinReal(a, n) << "] = " << a[findPositionMinReal(a, n)] << endl;
+			break;
+		}
+		case 14: {
+			system("cls");
+			cout << "----------14. Find the first even value in a 1-dimensional array of integer numbers----------" << endl;
+			int a[MAX];
+			int n;
+			cout << "Enter the number of elements: ";
+			cin >> n;
+			n = enterValidNumber(n);
+			enterArrayInt(a, n);
+			cout << "Array that just enter: " << endl;
+			printArrayInt(a, n);
+			int firstEvenPosition = findFirstEvenPosition(a, n);
+			if (firstEvenPosition != -1) {
+				cout << "The first even value is a[" << firstEvenPosition << "] = " << a[firstEvenPosition] << endl;
+			}
+			else {
+				cout << "Not found the even value in the array" << endl;
+			}
 			break;
 		}
 		default:
