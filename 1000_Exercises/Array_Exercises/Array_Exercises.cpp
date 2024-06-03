@@ -1,4 +1,4 @@
-#include <iostream>
+﻿#include <iostream>
 #include <cstdlib>
 #include <time.h>
 #include <math.h>
@@ -15,7 +15,7 @@ int printMenu() {
 	{
 		system("cls");
 		cout << "----------Menu----------" << endl;
-		cout << "1. Find the larger value in a 1-dimensional of real numbers" << endl;
+		/*cout << "1. Find the larger value in a 1-dimensional of real numbers" << endl;
 		cout << "2. Find a location where it has the smallest value in a 1-dimensional array of integer numbers" << endl;
 		cout << "3. Check the values in a 1-dimensional array of integer numbers that are even and less than X" << endl;
 		cout << "4. Count the number of the prime numbers less than 100 in a 1-dimentional array of integer numbers" << endl;
@@ -30,7 +30,22 @@ int printMenu() {
 		cout << "13. Find the positions that have the minimum value in a 1-dimensional array of real numbers" << endl;
 		cout << "14. Find the first even value in a 1-dimensional array of integer numbers" << endl;
 		cout << "15. Find the last perfect number in a 1-dimenstional array of integer numbers" << endl;
-		cout << "16. Find the position of the last minimum positive value in a 1-dimensional array of real numbers" << endl;
+		cout << "16. Find the position of the last minimum positive value in a 1-dimensional array of real numbers" << endl;*/
+		cout << "17. Find the value in the array of real numbers furthest to value x" << endl;
+		cout << "18. Find the value in the array of real numbers closest to value x" << endl;
+		cout << "19. Find the segment [a, b] such that this segment contains all the values ​​in a 1-dimensional array of real numbers" << endl;
+		cout << "20. Find value X such that [-x, x] contains all values in a 1-dimensional array of real numbers" << endl;
+		cout << "21. Find the first position that has value more than 50 in a 1-dimensional array of real numbers" << endl;
+		cout << "22. Find the last negative position that has value more than -1 in a 1-dimensional array of real numbers" << endl;
+		cout << "23. Find the first value within the given range [x, y]" << endl;
+		cout << "24. Find a position in a real array that meets 2 conditions: there are 2 neighboring values ​​and the value there is equal to the product of 2 neighboring values" << endl;
+		cout << "25. Find the first position that is a square number in a 1-dimensional array of integer numbers" << endl;
+		cout << "26. Find the first position that has a value whose first digit is an odd number in a 1-dimensional array of integer number" << endl;
+		cout << "27. Find the first position that has a value of form 2^k" << endl;
+		cout << "28. Find a value that has all odd digits and is the largest value that satisfies that condition in a 1-dimensional array of integers" << endl;
+		cout << "29. Find the largest value in an array of the form 5^k" << endl;
+		cout << "30. Find the smallest even number greater than every value in the array" << endl;
+		cout << "31. Find the smallest prime number greater than all values ​​in the array" << endl;
 		cout << "0. Close the program" << endl;
 
 		cout << "Enter your choice: ";
@@ -40,7 +55,7 @@ int printMenu() {
 			cin.ignore();
 			choice = -1;
 		}
-	} while (choice > 16 || choice < 0);
+	} while (choice > 31 || choice < 0);
 	return choice;
 }
 
@@ -61,12 +76,21 @@ int enterValidNumber(float n) {
 	return (int)n;
 }
 
+//Enter a 1-dimensional array of real numbers manual
+void enterArrayRealManual(float a[], int n) {
+	for (int i = 0; i < n; i++)
+	{
+		cout << "\na[" << i << "] = ";
+		cin >> a[i];
+	}
+}
+
 //Enter random the 1-dimensional array of real numbers
 void enterArrayReal(float a[], int n) {
 	srand(time(NULL));
 	for (int i = 0; i < n; i++)
 	{
-		a[i] = (rand()%100-50) / 1.1;
+		a[i] = (rand() % 200 - 50) / 1.1;
 	}
 }
 
@@ -130,6 +154,18 @@ int findPositionMinReal(float a[], int n) {
 		}
 	}
 	return pMin;
+}
+
+//Find the position that has the maximum value in an array of real numbers
+int findPositionMaxReal(float a[], int n) {
+	int pMax = 0;
+	for (int i = 0; i < n; i++)
+	{
+		if (a[i] > a[pMax]) {
+			pMax = i;
+		}
+	}
+	return pMax;
 }
 
 //Check if a value are even and less than x
@@ -264,6 +300,57 @@ int findLastMinPositivePosition(float a[], int n) {
 		}
 	}
 	return fLast;
+}
+
+//Absolute of a number
+float absNum(float n) {
+	if (n < 0)
+		n *= -1;
+	return n;
+}
+
+//Find the position that has a value furthest from value X
+int findPositionFurthestX(float a[], int n, float x) {
+	float diff = 0, nDiff = 0;
+	int pos = 0;
+	int pMax = findPositionMaxReal(a, n);
+	int pMin = findPositionMinReal(a, n);
+	if (x > a[pMax])
+		diff = x - a[pMax];
+	else
+		diff = a[pMax] - x;
+	if (x > a[pMin])
+		nDiff = x - a[pMin];
+	else
+		nDiff = a[pMin] - x;
+	if (diff > nDiff)
+		pos = pMax;
+	else
+		pos = pMin;
+	return pos;
+}
+
+//Find the position that has a value closest from value X
+int findPositionClosestX(float a[], int n, float x) {
+	float diff = 0, nDiff = 0;
+	if (x > a[0])
+		nDiff = x - a[0];
+	else
+		nDiff = a[0] - x;
+	int pos = 0;
+	for (int i = 0; i < n; i++)
+	{
+		if (x > a[i])
+			diff = x - a[i];
+		else
+			diff = a[i] - x;
+		if (diff < nDiff) {
+			nDiff = diff;
+			pos = i;
+		}
+			
+	}
+	return pos;
 }
 
 int main()
@@ -543,6 +630,212 @@ int main()
 			printArrayReal(a, n);
 			int fLast = findLastMinPositivePosition(a, n);
 			cout << "The last minumum positive value is a[" << fLast << "] = " << a[fLast] << endl;
+			break;
+		}
+		case 17: {
+			system("cls");
+			cout << "----------17. Find the position that has a value furthest from value X----------" << endl;
+			float a[MAX];
+			int n;
+			cout << "Enter the number of elements: ";
+			cin >> n;
+			n = enterValidNumber(n);
+			enterArrayReal(a, n);
+			cout << "Array that just enter: " << endl;
+			printArrayReal(a, n);
+			cout << "Enter x: ";
+			float x;
+			cin >> x;
+			int pos = findPositionFurthestX(a, n, x);
+			cout << "The position that has a value furthest from value " << x << " is a[" << pos << "] = " << a[pos] << endl;
+			break;
+		}
+		case 18: {
+			system("cls");
+			cout << "----------18. Find the value in the array of real numbers closest to value x----------" << endl;
+			float a[MAX];
+			int n;
+			cout << "Enter the number of elements: ";
+			cin >> n;
+			n = enterValidNumber(n);
+			enterArrayReal(a, n);
+			cout << "Array that just enter: " << endl;
+			printArrayReal(a, n);
+			cout << "Enter x: ";
+			float x;
+			cin >> x;
+			int pos = findPositionClosestX(a, n, x);
+			cout << "The position that has a value closest from value " << x << " is a[" << pos << "] = " << a[pos] << endl;
+			break;
+		}
+		case 19: {
+			system("cls");
+			cout << "----------19. Find the segment [a, b] such that this segment contains all the values ​​in a 1-dimensional array of real numbers----------" << endl;
+			float a[MAX];
+			int n;
+			cout << "Enter the number of elements: ";
+			cin >> n;
+			n = enterValidNumber(n);
+			enterArrayReal(a, n);
+			cout << "Array that just enter: " << endl;
+			printArrayReal(a, n);
+			cout << "The segment contains all values in this array is [" << a[findPositionMinReal(a, n)] << "; " << a[findPositionMaxReal(a, n)] << "]" << endl;
+			break;
+		}
+		case 20: {
+			system("cls");
+			cout << "----------20. Find value X such that [-x, x] contains all values in a 1-dimensional array of real numbers----------" << endl;
+			float a[MAX];
+			int n;
+			cout << "Enter the number of elements: ";
+			cin >> n;
+			n = enterValidNumber(n);
+			enterArrayReal(a, n);
+			cout << "Array that just enter: " << endl;
+			printArrayReal(a, n);
+			float max = absNum(a[findPositionMaxReal(a, n)]);
+			float min = absNum(a[findPositionMinReal(a, n)]);
+			float x = 0;
+			if (max > min)
+				x = max;
+			else
+				x = min;
+			cout << "The segment contains all values in this array is [" << -x << "; " << x << "]" << endl;
+			break;
+		}
+		case 21: {
+			system("cls");
+			cout << "----------21. Find the first position that has value more than 50 in a 1-dimensional array of real numbers----------" << endl;
+			float a[MAX];
+			int n;
+			cout << "Enter the number of elements: ";
+			cin >> n;
+			n = enterValidNumber(n);
+			enterArrayReal(a, n);
+			cout << "Array that just enter: " << endl;
+			printArrayReal(a, n);
+			int pos = -1;
+			for (int i = 0; i < n; i++)
+			{
+				if (a[i] > 50) {
+					pos = i;
+					break;
+				}
+			}
+			if (pos != -1)
+				cout << "The first position that has the value greater than 50 is a[" << pos << "] = " << a[pos] << endl;
+			else
+				cout << "Not found any position meets the requirement" << endl;
+			
+			break;
+		}
+		case 22: {
+			system("cls");
+			cout << "----------22. Find the last negative position that has a value greater than -1 in a 1-dimensional array of real numbers----------" << endl;
+			float a[MAX];
+			int n;
+			cout << "Enter the number of elements: ";
+			cin >> n;
+			n = enterValidNumber(n);
+			enterArrayReal(a, n);
+			cout << "Array that just enter: " << endl;
+			printArrayReal(a, n);
+			int pos = -1;
+			for (int i = 0; i < n; i++)
+			{
+				if (a[i] < 0 and a[i]>-1)
+					pos = i;
+			}
+			if (pos != -1)
+				cout << "The last negative position that has a value greater than -1 is a[" << pos << "] = " << a[pos] << endl;
+			else
+				cout << "Not found the value meets the requirement" << endl;
+			break;
+			
+		}
+		case 23: {
+			system("cls");
+			cout << "----------23. Find the first value within the given range [x, y]----------" << endl;
+			int a[MAX];
+			int n;
+			cout << "Enter the number of elements: ";
+			cin >> n;
+			n = enterValidNumber(n);
+			enterArrayInt(a, n);
+			cout << "Array that just enter: " << endl;
+			printArrayInt(a, n);
+			int x, y;
+			cout << "Enter x: ";
+			cin >> x;
+			cout << "Enter y: ";
+			cin >> y;
+			while (x > y) {
+				cout << "Please enter y > x: ";
+				cin >> y;
+			}
+			int pos = -1;
+			for (int i = 0; i < n; i++)
+			{
+				if (a[i] >= x && a[i] <= y) {
+					pos = i;
+					break;
+				}
+			}
+			if (pos != -1)
+				cout << "The value within the range[" << x << "; " << y << "] is a[" << pos << "] = " << a[pos] << endl;
+			else
+				cout << "Not found the value meets the requirement" << endl;
+			break;
+		}
+		case 24: {
+			system("cls");
+			cout << "----------24. Find a position in a real array that meets 2 conditions: there are 2 neighboring values ​​and the value there is equal to the product of 2 neighboring values----------" << endl;
+			float a[MAX];
+			int n;
+			cout << "Enter the number of elements: ";
+			cin >> n;
+			n = enterValidNumber(n);
+			enterArrayReal(a, n);
+			//enterArrayRealManual(a, n);
+			cout << "Array that just enter: " << endl;
+			printArrayReal(a, n);
+			int pos = -1;
+			for (int i = 1; i < n - 1; i++)
+			{
+				if (a[i] == a[i - 1] * a[i + 1]) {
+					pos = i;
+					break;
+				}
+			}
+			if (pos != -1)
+				cout << "The position meets the conditions is a[" << pos << "] = " << a[pos] << endl;
+			else
+				cout << "Not found any position meets the conditions" << endl;
+			break;
+		}
+		case 25: {
+			system("cls");
+			cout << "----------25. Find the first position that is a square number in a 1-dimensional array of integer numbers----------" << endl;
+			int a[MAX];
+			int n;
+			cout << "Enter the number of elements: ";
+			cin >> n;
+			n = enterValidNumber(n);
+			enterArrayInt(a, n);
+			cout << "Array that just enter: " << endl;
+			printArrayInt(a, n);
+			int pos = -1;
+			for (int i = 0; i < n; i++)
+			{
+				if (((int)sqrt(a[i]) == sqrt(a[i])) && (a[i] > 0)) {
+					pos = i;
+					break;
+				}
+			}
+			if (pos != -1)
+				cout << "The square number is a[" << pos << "] = " << a[pos] << endl;
+			else
+				cout << "Not found anyt square number in the array" << endl;
 			break;
 		}
 		default:
