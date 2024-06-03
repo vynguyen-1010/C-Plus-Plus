@@ -790,13 +790,85 @@ int main()
 		}
 		case 25: {
 			system("cls");
-			cout << "----------20. ----------" << endl;
-
+			cout << "----------25. Enter an integer number with 2 digits. Print the reading of this integer----------" << endl;
+			float n;
+			cout << "Enter n: ";
+			cin >> n;
+			n = enterValidIntNumber(n);
+			while (n < 10 || n >= 100)
+			{
+				cout << "Please enter the number with 2 digits: "; 
+				cin >> n;
+			
+			}
+			switch ((int)n /10)
+			{
+			case 1:
+				cout << "Ten ";
+				break;
+			case 2:
+				cout << "Twenty ";
+				break;
+			case 3:
+				cout << "Thirty ";
+				break;
+			case 4:
+				cout << "Forty ";
+				break;
+			case 5:
+				cout << "Fifty ";
+				break;
+			case 6:
+				cout << "Sixty ";
+				break;
+			case 7:
+				cout << "Seventy ";
+				break;
+			case 8:
+				cout << "Eighty ";
+				break;
+			case 9:
+				cout << "Nighty ";
+				break;
+			}
+			switch ((int)n % 10)
+			{
+			case 0:
+				break;
+			case 1:
+				cout << "one";
+				break;
+			case 2:
+				cout << "two";
+				break;
+			case 3:
+				cout << "three";
+				break;
+			case 4:
+				cout << "four";
+				break;
+			case 5:
+				cout << "five";
+				break;
+			case 6:
+				cout << "six";
+				break;
+			case 7:
+				cout << "seven";
+				break;
+			case 8:
+				cout << "eight";
+				break;
+			case 9:
+				cout << "night";
+				break;
+			}
+			cout << endl;
 			break;
 		}
 		case 26: {
 			system("cls");
-			cout << "----------20. ----------" << endl;
+			cout << "----------26. Enter an integer number with 3 digits. Print the reading of this integer----------" << endl;
 
 			break;
 		}

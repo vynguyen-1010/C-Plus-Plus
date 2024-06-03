@@ -194,6 +194,7 @@ void sortUpReal(float a[], int n) {
 	}
 }
 
+//Find the first postion of a positive value
 int findFirstPositivePosition(float a[], int n) {
 	int fPos = -1;
 	for (int i = 0; i < n; i++)
@@ -206,6 +207,7 @@ int findFirstPositivePosition(float a[], int n) {
 	return fPos;
 }
 
+//Find the last position of an even value
 int findLastEvenPosition(int a[], int n) {
 	int fLast = -1;
 	for (int i = 0; i < n; i++)
@@ -217,6 +219,7 @@ int findLastEvenPosition(int a[], int n) {
 	return fLast;
 }
 
+//Find the first postion of an even value
 int findFirstEvenPosition(int a[], int n) {
 	int fFirst = -1;
 	for (int i = 0; i < n; i++)
@@ -227,6 +230,40 @@ int findFirstEvenPosition(int a[], int n) {
 		}
 	}
 	return fFirst;
+}
+
+//Check if a number is the perfect number
+bool isPerfectNumber(int n) {
+	int sum = 0;
+	for (int i = 1; i < n; i++)
+		if (n % i == 0)
+			sum += i;
+	if (sum == n && (n > 0))
+		return true;
+	return false;
+}
+
+//Find the last position of a perfect number
+int findLastPerfectPosition(int a[], int n) {
+	int fPer = -1;
+	for (int i = 0; i < n; i++)
+		if (isPerfectNumber(a[i]))
+			fPer = i;
+	return fPer;
+}
+
+//Find the last position of the last the minimum positive value
+int findLastMinPositivePosition(float a[], int n) {
+	int fLast = 0;
+	float min = a[0];
+	for (int i = 0; i < n; i++)
+	{
+		if (a[i] < min) {
+			min = a[i];
+			fLast = i;
+		}
+	}
+	return fLast;
 }
 
 int main()
@@ -473,6 +510,39 @@ int main()
 			else {
 				cout << "Not found the even value in the array" << endl;
 			}
+			break;
+		}
+		case 15: {
+			system("cls");
+			cout << "----------15. Find the last perfect number in a 1-dimenstional array of integer numbers----------" << endl;
+			int a[MAX];
+			int n;
+			cout << "Enter the number of elements: ";
+			cin >> n;
+			n = enterValidNumber(n);
+			enterArrayInt(a, n);
+			cout << "Array that just enter: " << endl;
+			printArrayInt(a, n);
+			int fPer = findLastPerfectPosition(a, n);
+			if (fPer != -1)
+				cout << "The last perfect number is a[" << fPer << "] = " << a[fPer] << endl;
+			else
+				cout << "There is no perfect number in the array" << endl;
+			break;
+		}
+		case 16: {
+			system("cls");
+			cout << "----------16. Find the position of the last minimum positive value in a 1-dimensional array of real numbers----------" << endl;
+			float a[MAX];
+			int n;
+			cout << "Enter the number of elements: ";
+			cin >> n;
+			n = enterValidNumber(n);
+			enterArrayReal(a, n);
+			cout << "Array that just enter: " << endl;
+			printArrayReal(a, n);
+			int fLast = findLastMinPositivePosition(a, n);
+			cout << "The last minumum positive value is a[" << fLast << "] = " << a[fLast] << endl;
 			break;
 		}
 		default:

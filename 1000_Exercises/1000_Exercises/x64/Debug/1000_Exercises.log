@@ -1,56 +1,82 @@
 ﻿  1000_Exercises.cpp
-C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\1000_Exercises\1000_Exercises.cpp(36,11): warning C4566: character represented by universal-character-name '\u0251' cannot be represented in the current code page (1252)
-C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\1000_Exercises\1000_Exercises.cpp(163,13): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\1000_Exercises\1000_Exercises.cpp(224,24): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\1000_Exercises\1000_Exercises.cpp(225,34): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\1000_Exercises\1000_Exercises.cpp(234,24): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\1000_Exercises\1000_Exercises.cpp(253,24): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\1000_Exercises\1000_Exercises.cpp(258,16): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\1000_Exercises\1000_Exercises.cpp(271,24): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\1000_Exercises\1000_Exercises.cpp(276,24): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\1000_Exercises\1000_Exercises.cpp(281,23): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
-C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\1000_Exercises\1000_Exercises.cpp(293,24): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\1000_Exercises\1000_Exercises.cpp(297,24): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\1000_Exercises\1000_Exercises.cpp(301,24): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\1000_Exercises\1000_Exercises.cpp(303,54): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\1000_Exercises\1000_Exercises.cpp(303,51): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\1000_Exercises\1000_Exercises.cpp(303,48): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\1000_Exercises\1000_Exercises.cpp(342,90): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\1000_Exercises\1000_Exercises.cpp(351,24): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\1000_Exercises\1000_Exercises.cpp(355,16): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
-C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\1000_Exercises\1000_Exercises.cpp(388,24): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\1000_Exercises\1000_Exercises.cpp(403,24): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\1000_Exercises\1000_Exercises.cpp(432,24): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\1000_Exercises\1000_Exercises.cpp(435,24): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\1000_Exercises\1000_Exercises.cpp(445,24): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\1000_Exercises\1000_Exercises.cpp(446,16): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\1000_Exercises\1000_Exercises.cpp(467,14): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
-C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\1000_Exercises\1000_Exercises.cpp(468,46): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\1000_Exercises\1000_Exercises.cpp(469,45): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\1000_Exercises\1000_Exercises.cpp(470,46): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\1000_Exercises\1000_Exercises.cpp(484,27): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\1000_Exercises\1000_Exercises.cpp(499,24): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\1000_Exercises\1000_Exercises.cpp(503,24): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\1000_Exercises\1000_Exercises.cpp(507,24): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\1000_Exercises\1000_Exercises.cpp(509,25): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\1000_Exercises\1000_Exercises.cpp(509,22): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\1000_Exercises\1000_Exercises.cpp(509,19): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\1000_Exercises\1000_Exercises.cpp(525,12): warning C4566: character represented by universal-character-name '\u0251' cannot be represented in the current code page (1252)
-C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\1000_Exercises\1000_Exercises.cpp(529,27): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\1000_Exercises\1000_Exercises.cpp(533,27): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\1000_Exercises\1000_Exercises.cpp(537,27): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\1000_Exercises\1000_Exercises.cpp(541,27): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\1000_Exercises\1000_Exercises.cpp(545,27): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\1000_Exercises\1000_Exercises.cpp(549,27): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\1000_Exercises\1000_Exercises.cpp(563,29): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\1000_Exercises\1000_Exercises.cpp(571,28): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\1000_Exercises\1000_Exercises.cpp(581,27): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\1000_Exercises\1000_Exercises.cpp(589,29): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\1000_Exercises\1000_Exercises.cpp(597,28): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\1000_Exercises\1000_Exercises.cpp(661,27): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\1000_Exercises\1000_Exercises.cpp(669,29): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\1000_Exercises\1000_Exercises.cpp(677,28): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\1000_Exercises\1000_Exercises.cpp(737,27): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\1000_Exercises\1000_Exercises.cpp(745,29): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\1000_Exercises\1000_Exercises.cpp(753,28): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-  1000_Exercises.vcxproj -> C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\x64\Debug\1000_Exercises.exe
+C:\Users\Admin\Documents\C-Plus-Plus\1000_Exercises\1000_Exercises\1000_Exercises.cpp(36,11): warning C4566: character represented by universal-character-name '\u0251' cannot be represented in the current code page (1252)
+C:\Users\Admin\Documents\C-Plus-Plus\1000_Exercises\1000_Exercises\1000_Exercises.cpp(163,13): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\Admin\Documents\C-Plus-Plus\1000_Exercises\1000_Exercises\1000_Exercises.cpp(224,24): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\Admin\Documents\C-Plus-Plus\1000_Exercises\1000_Exercises\1000_Exercises.cpp(225,34): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\Admin\Documents\C-Plus-Plus\1000_Exercises\1000_Exercises\1000_Exercises.cpp(234,24): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\Admin\Documents\C-Plus-Plus\1000_Exercises\1000_Exercises\1000_Exercises.cpp(253,24): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\Admin\Documents\C-Plus-Plus\1000_Exercises\1000_Exercises\1000_Exercises.cpp(258,16): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\Admin\Documents\C-Plus-Plus\1000_Exercises\1000_Exercises\1000_Exercises.cpp(271,24): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\Admin\Documents\C-Plus-Plus\1000_Exercises\1000_Exercises\1000_Exercises.cpp(276,24): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\Admin\Documents\C-Plus-Plus\1000_Exercises\1000_Exercises\1000_Exercises.cpp(281,23): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+C:\Users\Admin\Documents\C-Plus-Plus\1000_Exercises\1000_Exercises\1000_Exercises.cpp(293,24): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\Admin\Documents\C-Plus-Plus\1000_Exercises\1000_Exercises\1000_Exercises.cpp(297,24): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\Admin\Documents\C-Plus-Plus\1000_Exercises\1000_Exercises\1000_Exercises.cpp(301,24): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\Admin\Documents\C-Plus-Plus\1000_Exercises\1000_Exercises\1000_Exercises.cpp(303,54): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\Admin\Documents\C-Plus-Plus\1000_Exercises\1000_Exercises\1000_Exercises.cpp(303,51): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\Admin\Documents\C-Plus-Plus\1000_Exercises\1000_Exercises\1000_Exercises.cpp(303,48): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\Admin\Documents\C-Plus-Plus\1000_Exercises\1000_Exercises\1000_Exercises.cpp(342,90): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\Admin\Documents\C-Plus-Plus\1000_Exercises\1000_Exercises\1000_Exercises.cpp(351,24): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\Admin\Documents\C-Plus-Plus\1000_Exercises\1000_Exercises\1000_Exercises.cpp(355,16): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
+C:\Users\Admin\Documents\C-Plus-Plus\1000_Exercises\1000_Exercises\1000_Exercises.cpp(388,24): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\Admin\Documents\C-Plus-Plus\1000_Exercises\1000_Exercises\1000_Exercises.cpp(403,24): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\Admin\Documents\C-Plus-Plus\1000_Exercises\1000_Exercises\1000_Exercises.cpp(432,24): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\Admin\Documents\C-Plus-Plus\1000_Exercises\1000_Exercises\1000_Exercises.cpp(435,24): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\Admin\Documents\C-Plus-Plus\1000_Exercises\1000_Exercises\1000_Exercises.cpp(445,24): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\Admin\Documents\C-Plus-Plus\1000_Exercises\1000_Exercises\1000_Exercises.cpp(446,16): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\Admin\Documents\C-Plus-Plus\1000_Exercises\1000_Exercises\1000_Exercises.cpp(467,14): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+C:\Users\Admin\Documents\C-Plus-Plus\1000_Exercises\1000_Exercises\1000_Exercises.cpp(468,46): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\Admin\Documents\C-Plus-Plus\1000_Exercises\1000_Exercises\1000_Exercises.cpp(469,45): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\Admin\Documents\C-Plus-Plus\1000_Exercises\1000_Exercises\1000_Exercises.cpp(470,46): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\Admin\Documents\C-Plus-Plus\1000_Exercises\1000_Exercises\1000_Exercises.cpp(484,27): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\Admin\Documents\C-Plus-Plus\1000_Exercises\1000_Exercises\1000_Exercises.cpp(499,24): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\Admin\Documents\C-Plus-Plus\1000_Exercises\1000_Exercises\1000_Exercises.cpp(503,24): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\Admin\Documents\C-Plus-Plus\1000_Exercises\1000_Exercises\1000_Exercises.cpp(507,24): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\Admin\Documents\C-Plus-Plus\1000_Exercises\1000_Exercises\1000_Exercises.cpp(509,25): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\Admin\Documents\C-Plus-Plus\1000_Exercises\1000_Exercises\1000_Exercises.cpp(509,22): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\Admin\Documents\C-Plus-Plus\1000_Exercises\1000_Exercises\1000_Exercises.cpp(509,19): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\Admin\Documents\C-Plus-Plus\1000_Exercises\1000_Exercises\1000_Exercises.cpp(525,12): warning C4566: character represented by universal-character-name '\u0251' cannot be represented in the current code page (1252)
+C:\Users\Admin\Documents\C-Plus-Plus\1000_Exercises\1000_Exercises\1000_Exercises.cpp(529,27): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\Admin\Documents\C-Plus-Plus\1000_Exercises\1000_Exercises\1000_Exercises.cpp(533,27): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\Admin\Documents\C-Plus-Plus\1000_Exercises\1000_Exercises\1000_Exercises.cpp(537,27): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\Admin\Documents\C-Plus-Plus\1000_Exercises\1000_Exercises\1000_Exercises.cpp(541,27): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\Admin\Documents\C-Plus-Plus\1000_Exercises\1000_Exercises\1000_Exercises.cpp(545,27): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\Admin\Documents\C-Plus-Plus\1000_Exercises\1000_Exercises\1000_Exercises.cpp(549,27): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\Admin\Documents\C-Plus-Plus\1000_Exercises\1000_Exercises\1000_Exercises.cpp(563,29): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\Admin\Documents\C-Plus-Plus\1000_Exercises\1000_Exercises\1000_Exercises.cpp(571,28): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\Admin\Documents\C-Plus-Plus\1000_Exercises\1000_Exercises\1000_Exercises.cpp(581,27): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\Admin\Documents\C-Plus-Plus\1000_Exercises\1000_Exercises\1000_Exercises.cpp(589,29): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\Admin\Documents\C-Plus-Plus\1000_Exercises\1000_Exercises\1000_Exercises.cpp(597,28): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\Admin\Documents\C-Plus-Plus\1000_Exercises\1000_Exercises\1000_Exercises.cpp(661,27): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\Admin\Documents\C-Plus-Plus\1000_Exercises\1000_Exercises\1000_Exercises.cpp(669,29): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\Admin\Documents\C-Plus-Plus\1000_Exercises\1000_Exercises\1000_Exercises.cpp(677,28): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\Admin\Documents\C-Plus-Plus\1000_Exercises\1000_Exercises\1000_Exercises.cpp(737,27): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\Admin\Documents\C-Plus-Plus\1000_Exercises\1000_Exercises\1000_Exercises.cpp(745,29): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\Admin\Documents\C-Plus-Plus\1000_Exercises\1000_Exercises\1000_Exercises.cpp(753,28): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\Admin\Documents\C-Plus-Plus\1000_Exercises\1000_Exercises\1000_Exercises.cpp(797,27): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\Admin\Documents\C-Plus-Plus\1000_Exercises\1000_Exercises\1000_Exercises.cpp(807,13): warning C4566: character represented by universal-character-name '\u01B0' cannot be represented in the current code page (1252)
+C:\Users\Admin\Documents\C-Plus-Plus\1000_Exercises\1000_Exercises\1000_Exercises.cpp(807,13): warning C4566: character represented by universal-character-name '\u1EDD' cannot be represented in the current code page (1252)
+C:\Users\Admin\Documents\C-Plus-Plus\1000_Exercises\1000_Exercises\1000_Exercises.cpp(810,13): warning C4566: character represented by universal-character-name '\u01B0' cannot be represented in the current code page (1252)
+C:\Users\Admin\Documents\C-Plus-Plus\1000_Exercises\1000_Exercises\1000_Exercises.cpp(810,13): warning C4566: character represented by universal-character-name '\u01A1' cannot be represented in the current code page (1252)
+C:\Users\Admin\Documents\C-Plus-Plus\1000_Exercises\1000_Exercises\1000_Exercises.cpp(813,13): warning C4566: character represented by universal-character-name '\u01B0' cannot be represented in the current code page (1252)
+C:\Users\Admin\Documents\C-Plus-Plus\1000_Exercises\1000_Exercises\1000_Exercises.cpp(813,13): warning C4566: character represented by universal-character-name '\u01A1' cannot be represented in the current code page (1252)
+C:\Users\Admin\Documents\C-Plus-Plus\1000_Exercises\1000_Exercises\1000_Exercises.cpp(816,13): warning C4566: character represented by universal-character-name '\u1ED1' cannot be represented in the current code page (1252)
+C:\Users\Admin\Documents\C-Plus-Plus\1000_Exercises\1000_Exercises\1000_Exercises.cpp(816,13): warning C4566: character represented by universal-character-name '\u01B0' cannot be represented in the current code page (1252)
+C:\Users\Admin\Documents\C-Plus-Plus\1000_Exercises\1000_Exercises\1000_Exercises.cpp(816,13): warning C4566: character represented by universal-character-name '\u01A1' cannot be represented in the current code page (1252)
+C:\Users\Admin\Documents\C-Plus-Plus\1000_Exercises\1000_Exercises\1000_Exercises.cpp(819,13): warning C4566: character represented by universal-character-name '\u0103' cannot be represented in the current code page (1252)
+C:\Users\Admin\Documents\C-Plus-Plus\1000_Exercises\1000_Exercises\1000_Exercises.cpp(819,13): warning C4566: character represented by universal-character-name '\u01B0' cannot be represented in the current code page (1252)
+C:\Users\Admin\Documents\C-Plus-Plus\1000_Exercises\1000_Exercises\1000_Exercises.cpp(819,13): warning C4566: character represented by universal-character-name '\u01A1' cannot be represented in the current code page (1252)
+C:\Users\Admin\Documents\C-Plus-Plus\1000_Exercises\1000_Exercises\1000_Exercises.cpp(822,13): warning C4566: character represented by universal-character-name '\u01B0' cannot be represented in the current code page (1252)
+C:\Users\Admin\Documents\C-Plus-Plus\1000_Exercises\1000_Exercises\1000_Exercises.cpp(822,13): warning C4566: character represented by universal-character-name '\u01A1' cannot be represented in the current code page (1252)
+C:\Users\Admin\Documents\C-Plus-Plus\1000_Exercises\1000_Exercises\1000_Exercises.cpp(825,13): warning C4566: character represented by universal-character-name '\u1EA3' cannot be represented in the current code page (1252)
+C:\Users\Admin\Documents\C-Plus-Plus\1000_Exercises\1000_Exercises\1000_Exercises.cpp(825,13): warning C4566: character represented by universal-character-name '\u01B0' cannot be represented in the current code page (1252)
+C:\Users\Admin\Documents\C-Plus-Plus\1000_Exercises\1000_Exercises\1000_Exercises.cpp(825,13): warning C4566: character represented by universal-character-name '\u01A1' cannot be represented in the current code page (1252)
+C:\Users\Admin\Documents\C-Plus-Plus\1000_Exercises\1000_Exercises\1000_Exercises.cpp(828,13): warning C4566: character represented by universal-character-name '\u01B0' cannot be represented in the current code page (1252)
+C:\Users\Admin\Documents\C-Plus-Plus\1000_Exercises\1000_Exercises\1000_Exercises.cpp(828,13): warning C4566: character represented by universal-character-name '\u01A1' cannot be represented in the current code page (1252)
+C:\Users\Admin\Documents\C-Plus-Plus\1000_Exercises\1000_Exercises\1000_Exercises.cpp(831,13): warning C4566: character represented by universal-character-name '\u01B0' cannot be represented in the current code page (1252)
+C:\Users\Admin\Documents\C-Plus-Plus\1000_Exercises\1000_Exercises\1000_Exercises.cpp(831,13): warning C4566: character represented by universal-character-name '\u01A1' cannot be represented in the current code page (1252)
+C:\Users\Admin\Documents\C-Plus-Plus\1000_Exercises\1000_Exercises\1000_Exercises.cpp(839,13): warning C4566: character represented by universal-character-name '\u1ED9' cannot be represented in the current code page (1252)
+C:\Users\Admin\Documents\C-Plus-Plus\1000_Exercises\1000_Exercises\1000_Exercises.cpp(848,13): warning C4566: character represented by universal-character-name '\u1ED1' cannot be represented in the current code page (1252)
+C:\Users\Admin\Documents\C-Plus-Plus\1000_Exercises\1000_Exercises\1000_Exercises.cpp(851,13): warning C4566: character represented by universal-character-name '\u0103' cannot be represented in the current code page (1252)
+C:\Users\Admin\Documents\C-Plus-Plus\1000_Exercises\1000_Exercises\1000_Exercises.cpp(857,13): warning C4566: character represented by universal-character-name '\u1EA3' cannot be represented in the current code page (1252)
+  1000_Exercises.vcxproj -> C:\Users\Admin\Documents\C-Plus-Plus\1000_Exercises\x64\Debug\1000_Exercises.exe
