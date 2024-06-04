@@ -225,9 +225,9 @@ int main() {
 	printArray(arr, n);*/
 
 
-#endif // Enter and print array by functions
+#endif Enter and print array by functions
 
-#if 1
+#if 0
 	
 	int a[ROW][COL];
 	int row, col;
@@ -257,7 +257,15 @@ int main() {
 	}
 	cout << "Summary of col " << iCol << ": " << sumCol2DArray(a, row, iCol) << endl;
 	
-#endif // two-demensional arrays 
+#endif two-demensional arrays 
+
+#if 1
+	char hoTen[10];
+	cout << "Nhap ho ten: ";
+	cin.getline(hoTen, 10);
+	cout << hoTen;
+#endif characters array
+
 
 
 	return 0;
