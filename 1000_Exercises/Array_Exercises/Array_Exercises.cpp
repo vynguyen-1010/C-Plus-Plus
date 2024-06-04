@@ -353,6 +353,41 @@ int findPositionClosestX(float a[], int n, float x) {
 	return pos;
 }
 
+//Check the first digit is odd
+bool isFirstDigitOdd(int n) {
+	if (n < 0)
+		n *= -1;
+	while (n >= 10)
+		n /= 10;
+	if (n % 2 != 0)
+		return true;
+	return false;
+}
+
+//Check if all digits are odd
+bool isAllDigitOdd(int n) {
+	if (n < 0)
+		n *= -1;
+	while (n % 2 != 0) {
+		n /= 10;
+	}
+	if (n >= 10)
+		return false;
+	return true;
+}
+
+//Check if a number has form of x^k
+bool isHasFormX(int x, int n) {
+	if (n < 0)
+		return false;
+	while (n > 1) {
+		if (n % x != 0)
+			return false;
+		n /= x;
+	}
+	return true;
+}
+
 int main()
 {
 	int choice;
@@ -836,6 +871,158 @@ int main()
 				cout << "The square number is a[" << pos << "] = " << a[pos] << endl;
 			else
 				cout << "Not found anyt square number in the array" << endl;
+			break;
+		}
+		case 26: {
+			system("cls");
+			cout << "----------26. Find the first position that has a value whose first digit is an odd number in a 1-dimensional array of integer number----------" << endl;
+			int a[MAX];
+			int n;
+			cout << "Enter the number of elements: ";
+			cin >> n;
+			n = enterValidNumber(n);
+			enterArrayInt(a, n);
+			cout << "Array that just enter: " << endl;
+			printArrayInt(a, n);
+			int pos = -1;
+			for (int i = 0; i < n; i++) {
+				if (isFirstDigitOdd(a[i])) {
+					pos = i;
+					break;
+				}	
+			}
+			if (pos != -1)
+				cout << "The first position that has a value whose first digit is an add number is a[" << pos << "] = " << a[pos] << endl;
+			else
+				cout << "Not found any position meets the requirement" << endl;
+			break;
+		}
+		case 27: {
+			system("cls");
+			cout << "----------27. Find the first position that has a value of form 2^k----------" << endl;
+			int a[MAX];
+			int n;
+			cout << "Enter the number of elements: ";
+			cin >> n;
+			n = enterValidNumber(n);
+			enterArrayInt(a, n);
+			cout << "Array that just enter: " << endl;
+			printArrayInt(a, n);
+			int pos = -1;
+			for (int i = 0; i < n; i++) {
+				if (isHasFormX(2, a[i])) {
+					pos = i;
+					break;
+				}
+			}
+			if (pos != -1)
+				cout << "The first position that has a value of form 2^k is a[" << pos << "] = " << a[pos] << endl;
+			else
+				cout << "Not found any position meets the requirement" << endl;
+			break;
+		}
+		case 28: {
+			system("cls");
+			cout << "----------28. Find a value that has all odd digits and is the largest value that satisfies that condition in a 1-dimensional array of integers----------" << endl;
+			int a[MAX];
+			int n;
+			cout << "Enter the number of elements: ";
+			cin >> n;
+			n = enterValidNumber(n);
+			enterArrayInt(a, n);
+			cout << "Array that just enter: " << endl;
+			printArrayInt(a, n);
+			int pos = -1; 
+			int max = 0;
+			for (int i = 0; i < n; i++) {
+				if (isAllDigitOdd(a[i])) {
+					pos = i;
+				}
+			}
+			if (pos != 0) {
+				for (int i = 0; i < n; i++) {
+					if (isAllDigitOdd(a[i])) {
+						if (a[i] > a[pos])
+							pos = i;
+					}
+				}
+				cout << "The first position that has a value of form 2^k is a[" << pos << "] = " << a[pos] << endl;
+			}	
+			else
+				cout << "Not found any position meets the requirement" << endl;
+			break;
+		}
+		case 29: {
+			system("cls");
+			cout << "----------29. Find the largest value in an array of the form 5^k----------" << endl;
+			int a[MAX];
+			int n;
+			cout << "Enter the number of elements: ";
+			cin >> n;
+			n = enterValidNumber(n);
+			enterArrayInt(a, n);
+			cout << "Array that just enter: " << endl;
+			printArrayInt(a, n);
+			int pos = -1;
+			for (int i = 0; i < n; i++)
+			{
+				if (isHasFormX(5, a[i])) {
+					pos = i;
+					break;
+				}
+			}
+			if (pos != -1)
+				cout << "The first position that has a value of form 5^k is a[" << pos << "] = " << a[pos] << endl;
+			else
+				cout << "Not found any position meets the requirement" << endl;
+			break;
+		}
+		case 30: {
+			system("cls");
+			cout << "----------30. Find the smallest even number greater than every value in the array----------" << endl;
+			int a[MAX];
+			int n;
+			cout << "Enter the number of elements: ";
+			cin >> n;
+			n = enterValidNumber(n);
+			enterArrayInt(a, n);
+			cout << "Array that just enter: " << endl;
+			printArrayInt(a, n);
+			int max = a[0];
+			for (int i = 0; i < n; i++)
+			{
+				if (a[i] > max)
+					max = a[i];
+			}
+			if (max % 2 != 0)
+				max++;
+			else
+				max += 2;
+			cout << "The smallest even number greater than every value is " << max << endl;
+			break;
+		}
+		case 31: {
+			system("cls");
+			cout << "----------31. Find the smallest prime number greater than all values ​​in the array----------" << endl;
+			int a[MAX];
+			int n;
+			cout << "Enter the number of elements: ";
+			cin >> n;
+			n = enterValidNumber(n);
+			enterArrayInt(a, n);
+			cout << "Array that just enter: " << endl;
+			printArrayInt(a, n);
+			int max = a[0];
+			for (int i = 0; i < n; i++)
+			{
+				if (a[i] > max)
+					max = a[i];
+			}
+			while (isPrimeNumber(max) == false)
+			{
+				max++;
+			}
+			cout << "The smallest prime number greater than all values is " << max << endl;
 			break;
 		}
 		default:
