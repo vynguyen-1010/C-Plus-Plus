@@ -1,67 +1,149 @@
 ﻿  Array_Exercises.cpp
-C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\Array_Exercises\Array_Exercises.cpp(36,11): warning C4566: character represented by universal-character-name '\u200B' cannot be represented in the current code page (1252)
-C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\Array_Exercises\Array_Exercises.cpp(41,11): warning C4566: character represented by universal-character-name '\u200B' cannot be represented in the current code page (1252)
-C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\Array_Exercises\Array_Exercises.cpp(48,11): warning C4566: character represented by universal-character-name '\u200B' cannot be represented in the current code page (1252)
-C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\Array_Exercises\Array_Exercises.cpp(90,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
-C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\Array_Exercises\Array_Exercises.cpp(93,30): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\Array_Exercises\Array_Exercises.cpp(99,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
-C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\Array_Exercises\Array_Exercises.cpp(406,24): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\Array_Exercises\Array_Exercises.cpp(407,22): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\Array_Exercises\Array_Exercises.cpp(409,22): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\Array_Exercises\Array_Exercises.cpp(410,47): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\Array_Exercises\Array_Exercises.cpp(420,24): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\Array_Exercises\Array_Exercises.cpp(421,21): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\Array_Exercises\Array_Exercises.cpp(423,21): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\Array_Exercises\Array_Exercises.cpp(424,76): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\Array_Exercises\Array_Exercises.cpp(434,24): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\Array_Exercises\Array_Exercises.cpp(435,21): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\Array_Exercises\Array_Exercises.cpp(437,21): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\Array_Exercises\Array_Exercises.cpp(439,44): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\Array_Exercises\Array_Exercises.cpp(453,24): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\Array_Exercises\Array_Exercises.cpp(454,21): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\Array_Exercises\Array_Exercises.cpp(456,21): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\Array_Exercises\Array_Exercises.cpp(474,24): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\Array_Exercises\Array_Exercises.cpp(475,22): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\Array_Exercises\Array_Exercises.cpp(477,22): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\Array_Exercises\Array_Exercises.cpp(478,31): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\Array_Exercises\Array_Exercises.cpp(489,24): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\Array_Exercises\Array_Exercises.cpp(490,22): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\Array_Exercises\Array_Exercises.cpp(492,22): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\Array_Exercises\Array_Exercises.cpp(494,18): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\Array_Exercises\Array_Exercises.cpp(495,22): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\Array_Exercises\Array_Exercises.cpp(504,25): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\Array_Exercises\Array_Exercises.cpp(517,25): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\Array_Exercises\Array_Exercises.cpp(531,24): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\Array_Exercises\Array_Exercises.cpp(532,21): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\Array_Exercises\Array_Exercises.cpp(534,21): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\Array_Exercises\Array_Exercises.cpp(550,24): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\Array_Exercises\Array_Exercises.cpp(551,22): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\Array_Exercises\Array_Exercises.cpp(553,22): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\Array_Exercises\Array_Exercises.cpp(575,24): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\Array_Exercises\Array_Exercises.cpp(576,22): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\Array_Exercises\Array_Exercises.cpp(578,22): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\Array_Exercises\Array_Exercises.cpp(579,57): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\Array_Exercises\Array_Exercises.cpp(595,25): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\Array_Exercises\header.h(10,12): error C2039: 'setprecision': is not a member of 'std'
+  (compiling source file 'Array_Exercises.cpp')
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\string(23,1):
+  see declaration of 'std'
+  
+C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\Array_Exercises\header.h(10,1): error C2873: 'setprecision': symbol cannot be used in a using-declaration
+  (compiling source file 'Array_Exercises.cpp')
+  
+C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\Array_Exercises\header.h(42,1): error C2144: syntax error: 'int' should be preceded by ';'
+  (compiling source file 'Array_Exercises.cpp')
+  
+C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\Array_Exercises\header.h(66,11): warning C4566: character represented by universal-character-name '\u200B' cannot be represented in the current code page (1252)
+  (compiling source file 'Array_Exercises.cpp')
+  
+C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\Array_Exercises\header.h(71,11): warning C4566: character represented by universal-character-name '\u200B' cannot be represented in the current code page (1252)
+  (compiling source file 'Array_Exercises.cpp')
+  
+C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\Array_Exercises\header.h(78,11): warning C4566: character represented by universal-character-name '\u200B' cannot be represented in the current code page (1252)
+  (compiling source file 'Array_Exercises.cpp')
+  
+C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\Array_Exercises\header.h(120,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  (compiling source file 'Array_Exercises.cpp')
+  
+C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\Array_Exercises\header.h(123,30): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+  (compiling source file 'Array_Exercises.cpp')
+  
+C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\Array_Exercises\header.h(129,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  (compiling source file 'Array_Exercises.cpp')
+  
+C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\Array_Exercises\header.h(140,11): error C3861: 'setprecision': identifier not found
+  (compiling source file 'Array_Exercises.cpp')
+  
+C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\Array_Exercises\header.h(140,3): error C2593: 'operator <<' is ambiguous
+  (compiling source file 'Array_Exercises.cpp')
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\ostream(480,39):
+  could be 'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(std::basic_streambuf<char,std::char_traits<char>> *)'
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\ostream(448,39):
+  or       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(const void *)'
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\ostream(430,39):
+  or       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(long double)'
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\ostream(412,39):
+  or       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(double)'
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\ostream(394,39):
+  or       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(float)'
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\ostream(376,39):
+  or       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(unsigned __int64)'
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\ostream(358,39):
+  or       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(__int64)'
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\ostream(340,39):
+  or       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(unsigned long)'
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\ostream(322,39):
+  or       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(long)'
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\ostream(303,39):
+  or       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(unsigned int)'
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\ostream(277,39):
+  or       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(int)'
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\ostream(258,39):
+  or       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(unsigned short)'
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\ostream(224,39):
+  or       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(short)'
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\ostream(206,39):
+  or       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(bool)'
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\ostream(200,39):
+  or       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(std::ios_base &(__cdecl *)(std::ios_base &))'
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\ostream(194,39):
+  or       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(std::basic_ios<char,std::char_traits<char>> &(__cdecl *)(std::basic_ios<char,std::char_traits<char>> &))'
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\ostream(189,39):
+  or       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(std::basic_ostream<char,std::char_traits<char>> &(__cdecl *)(std::basic_ostream<char,std::char_traits<char>> &))'
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\ostream(686,32):
+  or       'std::basic_ostream<char,std::char_traits<char>> &std::operator <<<char,std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,const char *)'
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\ostream(730,32):
+  or       'std::basic_ostream<char,std::char_traits<char>> &std::operator <<<char,std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,char)'
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\ostream(766,31):
+  or       'std::basic_ostream<char,std::char_traits<char>> &std::operator <<<std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,const char *)'
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\ostream(811,31):
+  or       'std::basic_ostream<char,std::char_traits<char>> &std::operator <<<std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,char)'
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\ostream(928,31):
+  or       'std::basic_ostream<char,std::char_traits<char>> &std::operator <<<std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,const signed char *)'
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\ostream(934,31):
+  or       'std::basic_ostream<char,std::char_traits<char>> &std::operator <<<std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,signed char)'
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\ostream(939,31):
+  or       'std::basic_ostream<char,std::char_traits<char>> &std::operator <<<std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,const unsigned char *)'
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\ostream(945,31):
+  or       'std::basic_ostream<char,std::char_traits<char>> &std::operator <<<std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,unsigned char)'
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\ostream(1080,32):
+  or       'std::basic_ostream<char,std::char_traits<char>> &std::operator <<<char,std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,const std::error_code &)'
+  C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\Array_Exercises\header.h(140,3):
+  while trying to match the argument list '(std::ostream, unknown-type)'
+  
+C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\Array_Exercises\Array_Exercises.cpp(29,24): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\Array_Exercises\Array_Exercises.cpp(30,22): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\Array_Exercises\Array_Exercises.cpp(32,22): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\Array_Exercises\Array_Exercises.cpp(33,47): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\Array_Exercises\Array_Exercises.cpp(43,24): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\Array_Exercises\Array_Exercises.cpp(44,21): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\Array_Exercises\Array_Exercises.cpp(46,21): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\Array_Exercises\Array_Exercises.cpp(47,76): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\Array_Exercises\Array_Exercises.cpp(57,24): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\Array_Exercises\Array_Exercises.cpp(58,21): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\Array_Exercises\Array_Exercises.cpp(60,21): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\Array_Exercises\Array_Exercises.cpp(62,44): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\Array_Exercises\Array_Exercises.cpp(76,24): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\Array_Exercises\Array_Exercises.cpp(77,21): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\Array_Exercises\Array_Exercises.cpp(79,21): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\Array_Exercises\Array_Exercises.cpp(97,24): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\Array_Exercises\Array_Exercises.cpp(98,22): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\Array_Exercises\Array_Exercises.cpp(100,22): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\Array_Exercises\Array_Exercises.cpp(101,31): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\Array_Exercises\Array_Exercises.cpp(112,24): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\Array_Exercises\Array_Exercises.cpp(113,22): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\Array_Exercises\Array_Exercises.cpp(115,22): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\Array_Exercises\Array_Exercises.cpp(117,18): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\Array_Exercises\Array_Exercises.cpp(118,22): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\Array_Exercises\Array_Exercises.cpp(127,25): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\Array_Exercises\Array_Exercises.cpp(140,25): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\Array_Exercises\Array_Exercises.cpp(154,24): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\Array_Exercises\Array_Exercises.cpp(155,21): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\Array_Exercises\Array_Exercises.cpp(157,21): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\Array_Exercises\Array_Exercises.cpp(173,24): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\Array_Exercises\Array_Exercises.cpp(174,22): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\Array_Exercises\Array_Exercises.cpp(176,22): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\Array_Exercises\Array_Exercises.cpp(198,24): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\Array_Exercises\Array_Exercises.cpp(199,22): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\Array_Exercises\Array_Exercises.cpp(201,22): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\Array_Exercises\Array_Exercises.cpp(202,57): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\Array_Exercises\Array_Exercises.cpp(218,25): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\Array_Exercises\Array_Exercises.cpp(233,25): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\Array_Exercises\Array_Exercises.cpp(247,25): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\Array_Exercises\Array_Exercises.cpp(267,25): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\Array_Exercises\Array_Exercises.cpp(285,25): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\Array_Exercises\Array_Exercises.cpp(300,25): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\Array_Exercises\Array_Exercises.cpp(318,25): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\Array_Exercises\Array_Exercises.cpp(331,12): warning C4566: character represented by universal-character-name '\u200B' cannot be represented in the current code page (1252)
+C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\Array_Exercises\Array_Exercises.cpp(336,25): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\Array_Exercises\Array_Exercises.cpp(350,25): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\Array_Exercises\Array_Exercises.cpp(371,25): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\Array_Exercises\Array_Exercises.cpp(397,25): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\Array_Exercises\Array_Exercises.cpp(421,25): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\Array_Exercises\Array_Exercises.cpp(450,12): warning C4566: character represented by universal-character-name '\u200B' cannot be represented in the current code page (1252)
+C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\Array_Exercises\Array_Exercises.cpp(455,25): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\Array_Exercises\Array_Exercises.cpp(481,25): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\Array_Exercises\Array_Exercises.cpp(506,25): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\Array_Exercises\Array_Exercises.cpp(530,25): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\Array_Exercises\Array_Exercises.cpp(554,25): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\Array_Exercises\Array_Exercises.cpp(585,25): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
 C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\Array_Exercises\Array_Exercises.cpp(610,25): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\Array_Exercises\Array_Exercises.cpp(624,25): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\Array_Exercises\Array_Exercises.cpp(644,25): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\Array_Exercises\Array_Exercises.cpp(662,25): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\Array_Exercises\Array_Exercises.cpp(677,25): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\Array_Exercises\Array_Exercises.cpp(695,25): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\Array_Exercises\Array_Exercises.cpp(708,12): warning C4566: character represented by universal-character-name '\u200B' cannot be represented in the current code page (1252)
-C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\Array_Exercises\Array_Exercises.cpp(713,25): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\Array_Exercises\Array_Exercises.cpp(727,25): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\Array_Exercises\Array_Exercises.cpp(748,25): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\Array_Exercises\Array_Exercises.cpp(774,25): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\Array_Exercises\Array_Exercises.cpp(798,25): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\Array_Exercises\Array_Exercises.cpp(827,12): warning C4566: character represented by universal-character-name '\u200B' cannot be represented in the current code page (1252)
-C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\Array_Exercises\Array_Exercises.cpp(832,25): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\Array_Exercises\Array_Exercises.cpp(858,25): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\Array_Exercises\Array_Exercises.cpp(883,25): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\Array_Exercises\Array_Exercises.cpp(907,25): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\Array_Exercises\Array_Exercises.cpp(931,25): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\Array_Exercises\Array_Exercises.cpp(962,25): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\Array_Exercises\Array_Exercises.cpp(987,25): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\Array_Exercises\Array_Exercises.cpp(1006,12): warning C4566: character represented by universal-character-name '\u200B' cannot be represented in the current code page (1252)
-C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\Array_Exercises\Array_Exercises.cpp(1011,25): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-  Array_Exercises.vcxproj -> C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\x64\Debug\Array_Exercises.exe
+C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\Array_Exercises\Array_Exercises.cpp(629,12): warning C4566: character represented by universal-character-name '\u200B' cannot be represented in the current code page (1252)
+C:\Users\User\Documents\GitHub\C-Plus-Plus\1000_Exercises\Array_Exercises\Array_Exercises.cpp(634,25): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
